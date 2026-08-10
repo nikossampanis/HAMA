@@ -665,28 +665,13 @@ if st.session_state.get("ran"):
 
 
     st.markdown(
-        f"""
-        <div class="card {cls}">
-
-            <b>
-            🧮 MATH AGENT → ENERGY AGENT
-            </b>
-
-            <br>
-
-            STATUS:
-            {m["status"]}
-
-            <br>
-
-            <span class="small">
-            {m["message"]}
-            </span>
-
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    f'<div class="card {cls}">'
+    f'<b>🧮 MATH AGENT → ENERGY AGENT</b><br>'
+    f'<b>STATUS:</b> {m["status"]}<br>'
+    f'<span class="small">{m["message"]}</span>'
+    f'</div>',
+    unsafe_allow_html=True
+)
 
 
     if m["status"] == "PASS":

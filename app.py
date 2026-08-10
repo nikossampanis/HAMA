@@ -1161,35 +1161,6 @@ st.caption(
 # FOOTER / AUTHORSHIP
 # ============================================================
 
-st.markdown(
-    """
-    <div class="hama-footer">
-
-        <div class="brand">
-
-            HAMA • HUMAN–AI MULTI-AGENT
-            VIRTUAL STUDENT STARTUP LAB
-
-        </div>
-
-        <div class="developer">
-
-            Designed & Developed by
-            <b>Nikolaos Sampanis</b>
-            • PhD Candidate
-
-        </div>
-
-        <div class="version">
-
-            Research Prototype
-            • Release 1.0
-            • Streamlit / Python
-
-        </div>
-
-    </div>
-    """,
-
-    unsafe_allow_html=True
-)
+st.markdown("""
+<div class="hama-footer"><div class="brand">HAMA • HUMAN–AI MULTI-AGENT VIRTUAL STUDENT STARTUP LAB</div><div class="developer">Designed &amp; Developed by <strong>Nikolaos Sampanis</strong> • PhD Candidate</div><div class="version">Research Prototype • Release 1.0 • Streamlit / Python</div></div>
+""", unsafe_allow_html=True)
